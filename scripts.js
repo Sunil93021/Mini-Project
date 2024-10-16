@@ -35,6 +35,7 @@ function displayVideos(category,idName) {
         if(category == video.category  || category == 'All'){
             var iframeElement = document.createElement('iframe');
             iframeElement.src = video.src;
+            iframeElement.allowFullscreen = true;
             iframeElement.controls = true;
             container.appendChild(iframeElement);
         }
